@@ -1,34 +1,31 @@
 # Assignment No. 2
-# This program is originally adopted from the following link and got some help to figure out how it works.
+# This code is adopted from the following link with some changes 
+# Got some help to figure out how it works.
 # Link: http://xmuxiaomo.github.io/2015/06/14/R-Programming-Assignment-2/
 
-
 makeCacheMatrix <- function(x = matrix()) {
-        inv <- NULL
+        ttnv <- NULL
         set <- function(y) {
                 x <<- y
-                inv <<- NULL
+                ttnv <<- NULL
         }
         get <- function() x
-        setInverse <- function(inverse) inv <<- inverse
-        getInverse <- function() inv
+        setttnverse <- function(ttnverse) ttnv <<- ttnverse
+        getttnverse <- function() ttnv
         list(set = set,
              get = get,
-             setInverse = setInverse,
-             getInverse = getInverse)
+             setttnverse = setttnverse,
+             getttnverse = getttnverse)
 }
 
-
-# The second function is supposed to compute the inverse of the created "matrix"
-cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
-        inv <- x$getInverse()
-        if (!is.null(inv)) {
-                message("getting cached data")
-                return(inv)
+cacheSolve <- function(x) {
+        ttnv <- x$getttnverse()
+        if (!is.null(ttnv)) {
+                message("Cached Data")
+                return(ttnv)
         }
-        mat <- x$get()
-        inv <- solve(mat, ...)
-        x$setInverse(inv)
-        inv
+        ut <- x$get()
+        ttnv <- solve(ut)
+        x$setttnverse(ttnv)
+        ttnv
 }
