@@ -1,6 +1,6 @@
 # Assignment No. 2
 # This program is originally adopted from the following link and got some help to figure out how it works.
-# http://xmuxiaomo.github.io/2015/06/14/R-Programming-Assignment-2/
+# Link: http://xmuxiaomo.github.io/2015/06/14/R-Programming-Assignment-2/
 
 
 makeCacheMatrix <- function(x = matrix()) {
