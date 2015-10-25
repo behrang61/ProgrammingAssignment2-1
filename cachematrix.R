@@ -1,5 +1,5 @@
 # Assignment No. 2 (Cache Matrix)
-# The following website is visited to develop the program 
+# The following website is visited and its explanation was utilized to develop the program 
 # Got some help to figure out how it works.
 # Link: http://xmuxiaomo.github.io/
 
