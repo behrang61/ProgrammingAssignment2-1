@@ -1,5 +1,5 @@
-# Assignment No. 2
-# This code is adopted from the following link with some changes 
+# Assignment No. 2 (Cache Matrix)
+# The following website is visited to develop the program 
 # Got some help to figure out how it works.
 # Link: http://xmuxiaomo.github.io/
 
@@ -18,14 +18,14 @@ makeCacheMatrix <- function(x = matrix()) {
              getttnverse = getttnverse)
 }
 
-cacheSolve <- function(x) {
+cacheSolve <- function(x, ...) {
         ttnv <- x$getttnverse()
         if (!is.null(ttnv)) {
                 message("Cached Data")
                 return(ttnv)
         }
         ut <- x$get()
-        ttnv <- solve(ut)
+        ttnv <- solve(ut, ...)
         x$setttnverse(ttnv)
         ttnv
 }
