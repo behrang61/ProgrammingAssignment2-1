@@ -1,5 +1,8 @@
 # Assignment No. 2
-# This program created by searching on the internet and getting some help to undestand how it works.
+# This program is originally adopted from the following link and got some help to figure out how it works.
+# http://xmuxiaomo.github.io/2015/06/14/R-Programming-Assignment-2/
+
+
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
@@ -14,7 +17,6 @@ makeCacheMatrix <- function(x = matrix()) {
              setInverse = setInverse,
              getInverse = getInverse)
 }
-
 
 
 # The second function is supposed to compute the inverse of the created "matrix"
