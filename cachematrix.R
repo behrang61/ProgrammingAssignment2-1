@@ -1,3 +1,5 @@
+# Assignment No. 2
+# This program created by searching on the internet and getting some help to undestand how it works.
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
@@ -13,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getInverse = getInverse)
 }
 
-
+# The second function is supposed to compute the inverse of the special "matrix"
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
