@@ -1,7 +1,7 @@
 # Assignment No. 2
 # This code is adopted from the following link with some changes 
 # Got some help to figure out how it works.
-# Link: http://xmuxiaomo.github.io/2015/06/14/R-Programming-Assignment-2/
+# Link: http://xmuxiaomo.github.io/
 
 makeCacheMatrix <- function(x = matrix()) {
         ttnv <- NULL
